@@ -8,6 +8,8 @@ package com.evangreenstein.evaluator.main;
 import com.evangreenstein.evaluator.Evaluator;
 import com.evangreenstein.evaluator.exceptions.DivisionByZeroException;
 import com.evangreenstein.evaluator.exceptions.InvalidStringException;
+import com.evangreenstein.evaluator.exceptions.NonBinaryExpressionException;
+import com.evangreenstein.evaluator.exceptions.NonMatchingParenthesisException;
 import java.util.ArrayDeque;
 import java.util.Queue;
 import org.slf4j.Logger;
@@ -15,23 +17,16 @@ import org.slf4j.LoggerFactory;
 
 /**
  *
- * @author evangreenstein
+ * Was used for testing the evaluator while it was in development
  */
 public class Main {
     private final static Logger LOG = LoggerFactory.getLogger(Main.class);
 
-    public static void main(String[] args) throws InvalidStringException, DivisionByZeroException{
+    public static void main(String[] args) throws InvalidStringException, DivisionByZeroException, NonBinaryExpressionException, NonMatchingParenthesisException{
         Evaluator eval = new Evaluator();
-        Queue<String> exp = new ArrayDeque<>();
-        exp.add("2");
-        exp.add("+");
-        exp.add("4");
-        exp.add("*");
-        exp.add("3");
-        exp.add("/");
-        exp.add("3");
-        
-        LOG.info("\n Result: " + eval.evaluate(exp));
+        Queue<String> exp = eval.createExpression();
+        LOG.info("\n\nResult: " + eval.evaluate(exp));
         
     }
+
 }

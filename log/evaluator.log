@@ -1,16 +1,13 @@
-[DEBUG] 2019-12-04 20:54:26.640 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - String in front of infix queue: 2
-[DEBUG] 2019-12-04 20:54:26.646 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[DEBUG] 2019-12-04 20:54:26.646 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - String in front of infix queue: +
-[DEBUG] 2019-12-04 20:54:26.646 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
-[DEBUG] 2019-12-04 20:54:26.646 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - String in front of infix queue: 4
-[DEBUG] 2019-12-04 20:54:26.647 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[DEBUG] 2019-12-04 20:54:26.647 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - String in front of infix queue: *
-[DEBUG] 2019-12-04 20:54:26.647 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
-[DEBUG] 2019-12-04 20:54:26.647 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - String in front of infix queue: 3
-[DEBUG] 2019-12-04 20:54:26.648 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[DEBUG] 2019-12-04 20:54:26.648 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - String in front of infix queue: /
-[DEBUG] 2019-12-04 20:54:26.648 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
-[DEBUG] 2019-12-04 20:54:26.648 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - String in front of infix queue: 3
-[DEBUG] 2019-12-04 20:54:26.649 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[INFO ] 2019-12-04 20:54:26.656 [com.evangreenstein.evaluator.main.Main.main()] Main - 
- Result: 6
+[INFO ] 2019-12-05 21:40:46.690 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Infix expression: [(, 2, +, 4, /, 2, )]
+[INFO ] 2019-12-05 21:40:46.695 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Infix expression: [2, +, 4, /, 2]
+[DEBUG] 2019-12-05 21:40:46.696 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
+[DEBUG] 2019-12-05 21:40:46.696 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
+[DEBUG] 2019-12-05 21:40:46.697 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
+[DEBUG] 2019-12-05 21:40:46.697 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
+[DEBUG] 2019-12-05 21:40:46.715 [com.evangreenstein.evaluator.main.Main.main()] Evaluator -      op1 = '/' , op2 = '+'
+[DEBUG] 2019-12-05 21:40:46.716 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
+[INFO ] 2019-12-05 21:40:46.716 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Postfix expression: [2, 4, 2, /, +]
+[INFO ] 2019-12-05 21:40:46.722 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Postfix expression: [4]
+[INFO ] 2019-12-05 21:40:46.723 [com.evangreenstein.evaluator.main.Main.main()] Main - 
+
+Result: 4

@@ -9,13 +9,13 @@ package com.evangreenstein.evaluator.exceptions;
  *
  * @author evangreenstein
  */
-public class NonMatchingParathesisException extends Exception{
+public class NonMatchingParenthesisException extends Exception{
     
-    public NonMatchingParathesisException(String errorMessage) {
+    public NonMatchingParenthesisException(String errorMessage) {
         super(errorMessage);
     }
     
-    public NonMatchingParathesisException(String errorMessage, Throwable err) {
+    public NonMatchingParenthesisException(String errorMessage, Throwable err) {
         super(errorMessage, err);
     }
     
