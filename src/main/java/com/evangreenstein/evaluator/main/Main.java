@@ -25,7 +25,7 @@ public class Main {
     public static void main(String[] args) throws InvalidStringException, DivisionByZeroException, NonBinaryExpressionException, NonMatchingParenthesisException{
         Evaluator eval = new Evaluator();
         Queue<String> exp = eval.createExpression();
-        LOG.info("\n\nResult: " + eval.evaluate(exp));
+        LOG.info("Result: " + eval.evaluate(exp));
         
     }
 

@@ -22,7 +22,7 @@ public class Evaluator {
     private final static Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
     /**
-     * The workhorse of this class.It evaluates a given infix expression which
+     * The workhorse of this class. It evaluates a given infix expression which
      * is represented by a queue of strings. It first performs the infix to
      * postfix conversion and then evaluates the postfix expression.
      *
@@ -31,6 +31,7 @@ public class Evaluator {
      * @throws InvalidStringException
      * @throws DivisionByZeroException
      * @throws NonBinaryExpressionException
+     * @throws NonMatchingParenthesisException
      */
     public String evaluate(Queue<String> infixExpression) throws InvalidStringException, DivisionByZeroException, NonBinaryExpressionException, NonMatchingParenthesisException {
         Queue<String> postfixQueue = new ArrayDeque<>();
@@ -48,7 +49,7 @@ public class Evaluator {
             String string = infixExpression.peek();
             //LOG.debug("String in front of infix queue: " + string);
 
-            String operatorAtTop;
+            String operatorOnTop;
             if (isOpenParenthesis(string)) {
                 //To remove the first parenthesis in the expression
                 infixExpression.poll();
@@ -68,29 +69,31 @@ public class Evaluator {
                     for (String value = infixExpression.peek();
                             !isClosedParenthesis(value) || openParenthesisCount != closedParenthesisCount;
                             value = infixExpression.peek()) {
-                        //LOG.debug(value);
+                        LOG.debug(value);
                         if (isOpenParenthesis(value)) {
-                            //LOG.debug("openParenthesisCount++;");
+                            LOG.debug("openParenthesisCount++;");
                             openParenthesisCount++;
                         } else if (isClosedParenthesis(value)) {
-                            //LOG.debug("closedParenthesisCount++;");
+                            LOG.debug("closedParenthesisCount++;");
                             closedParenthesisCount++;
                             //To exclude the last parenthesis in sub-expression
                             if (openParenthesisCount == closedParenthesisCount) {
                                 continue;
                             }
                         }
-                        //LOG.debug(openParenthesisCount + " " + closedParenthesisCount );
+                        LOG.debug(openParenthesisCount + " " + closedParenthesisCount );
                         subExpression.add(infixExpression.poll());
                     }
                 } catch (NullPointerException ex) {
-                    throw new NonMatchingParenthesisException("Mismatched '('", ex);
+                    //Still possible that the expression looks like this: ')()('
+                    throw new NonMatchingParenthesisException("An expression cannot look like this: ')()(' ", ex);
                 }
                 //It is impossible for the value before a ')' to be an operator 
                 if (isOperator(infixExpression.peek())) {
                     throw new NonBinaryExpressionException("There cannot be an operator right before a ')'");
                 }
-                //LOG.debug("sub expression: "+ subExpression.toString());
+                LOG.debug("sub expression: "+ subExpression.toString());
+                //Recursion!!
                 postfixQueue.add(evaluate(subExpression));
                 //To remove the last parenthesis in the expression
                 infixExpression.poll();
@@ -99,17 +102,16 @@ public class Evaluator {
                 postfixQueue.add(infixExpression.poll());
             } else if (isOperator(string)) {
                 LOG.debug("Operator");
-                operatorAtTop = operatorStack.peek();
-                //LOG.debug("     string = '" + string + "' , opAtTop = '" + operatorAtTop + "'");
+                operatorOnTop = operatorStack.peek();
+                //LOG.debug("     string = '" + string + "' , operator currently on top of the stack = '" + operatorAtTop + "'");
                 //Checking if there's something in the stack
-                if (operatorAtTop != null) {
-
+                if (operatorOnTop != null) {
                     //Checking if 'string' has greater precdence than whatever operator is
                     //currently at the top of the stack
-                    while (comparePrecedence(string, operatorAtTop) <= 0) {
+                    while (comparePrecedence(string, operatorOnTop) <= 0) {
                         postfixQueue.add(operatorStack.pop());
                         if (!operatorStack.isEmpty()) {
-                            operatorAtTop = operatorStack.peek();
+                            operatorOnTop = operatorStack.peek();
                         } else {
                             break;
                         }
@@ -121,7 +123,8 @@ public class Evaluator {
                 if (isClosedParenthesis(string)) {
                     throw new InvalidStringException("An expression cannot start with a ')'");
                 }
-                throw new InvalidStringException("The string is neither an operator or an operand");
+                throw new InvalidStringException("There is/are is an operation/s in this expression "
+                        + "that is not supported by this evaluator");
             }
         }
 
@@ -144,9 +147,10 @@ public class Evaluator {
                 expressionArray[0] = operandStack.poll();
                 operandStack.push(solveInfixExp(expressionArray[0], expressionArray[1], expressionArray[2]));
             } else {
-                throw new InvalidStringException("The string is neither an operator or an operand");
+                throw new InvalidStringException("There is/are is an operation/s that not supported by this evaluator");
             }
         }
+        LOG.info("Final operand stack: "+ operandStack.toString());
         // Postfix evaluation --- end
         return operandStack.peek();
     }
@@ -175,12 +179,12 @@ public class Evaluator {
     }
 
     private boolean isOpenParenthesis(String value) {
-        //LOG.debug("[isOpenParenthesis] " + value);
+        LOG.debug("[isOpenParenthesis] " + value);
         return value.equals("(");
     }
 
     private boolean isClosedParenthesis(String value) {
-        //LOG.debug("[isClosedParenthesis] " + value);
+        LOG.debug("[isClosedParenthesis] " + value);
         return value.equals(")");
     }
 
@@ -258,12 +262,18 @@ public class Evaluator {
      */
     public Queue<String> createExpression() {
         Queue<String> exp = new ArrayDeque<>();
+        exp.add("2");
         exp.add("(");
         exp.add("2");
         exp.add("+");
         exp.add("4");
-        exp.add("/");
-        exp.add("2");
+        exp.add(")");
+        exp.add("8");
+        exp.add("+");
+        exp.add("(");
+        exp.add("3");
+        exp.add("+");
+        exp.add("7");
         exp.add(")");
         return exp;
     }
