@@ -1,146 +1,62 @@
-[INFO ] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Infix expression: [2, (, 2, +, 4, ), 8, +, (, 3, +, 7, )]
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] (
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 8
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 8
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] (
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] (
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 8
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 8
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] (
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.834 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] (
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 1 0
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 1 0
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 1 0
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - )
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - closedParenthesisCount++;
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - sub expression: [2, +, 4]
-[INFO ] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Infix expression: [2, +, 4]
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 2
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 4
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[INFO ] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Postfix expression: [2, 4, +]
-[INFO ] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Final operand stack: [6]
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 8
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] (
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 3
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 1 0
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 1 0
-[DEBUG] 2019-12-06 15:05:09.844 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - 1 0
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - )
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - closedParenthesisCount++;
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] )
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - sub expression: [3, +, 7]
-[INFO ] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Infix expression: [3, +, 7]
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isClosedParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 3
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] +
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operator
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - [isOpenParenthesis] 7
-[DEBUG] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Operand
-[INFO ] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Postfix expression: [3, 7, +]
-[INFO ] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Final operand stack: [10]
-[INFO ] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Postfix expression: [2, 6, 8, 10, +]
-[INFO ] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Evaluator - Final operand stack: [18, 6, 2]
-[INFO ] 2019-12-06 15:05:09.854 [com.evangreenstein.evaluator.main.Main.main()] Main - Result: 18
+[INFO ] 2019-12-07 15:27:23.142 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Infix expression: [(, 2, +, 4, ), +, (, 3, +, 7, )]
+[INFO ] 2019-12-07 15:27:23.146 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [convertToPostfix] - Infix expression: [(, 2, +, 4, ), +, (, 3, +, 7, )]
+[INFO ] 2019-12-07 15:27:23.146 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: []
+[INFO ] 2019-12-07 15:27:23.147 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [evaluteSubExpression] - Infix expression: [(, 2, +, 4, ), +, (, 3, +, 7, )]
+[DEBUG] 2019-12-07 15:27:23.147 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 2
+[DEBUG] 2019-12-07 15:27:23.152 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
+[DEBUG] 2019-12-07 15:27:23.154 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - +
+[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
+[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 4
+[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
+[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - )
+[DEBUG] 2019-12-07 15:27:23.156 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - closedParenthesisCount++;
+[DEBUG] 2019-12-07 15:27:23.156 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - sub expression: [2, +, 4]
+[INFO ] 2019-12-07 15:27:23.156 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [convertToPostfix] - Infix expression: [2, +, 4]
+[INFO ] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: []
+[DEBUG] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
+[INFO ] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue +
+[INFO ] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [2]
+[DEBUG] 2019-12-07 15:27:23.158 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operator
+[DEBUG] 2019-12-07 15:27:23.158 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - operator currently on top of the stack = null
+[INFO ] 2019-12-07 15:27:23.158 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [2]
+[DEBUG] 2019-12-07 15:27:23.159 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
+[INFO ] 2019-12-07 15:27:23.159 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue null
+[INFO ] 2019-12-07 15:27:23.160 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - evaluatePostfix - Postfix expression: [2, 4, +]
+[INFO ] 2019-12-07 15:27:23.164 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Final operand stack: [6]
+[INFO ] 2019-12-07 15:27:23.165 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Result: 6
+[INFO ] 2019-12-07 15:27:23.165 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue +
+[INFO ] 2019-12-07 15:27:23.165 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 6
+[INFO ] 2019-12-07 15:27:23.167 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] Postfix expression: [6]
+[INFO ] 2019-12-07 15:27:23.167 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [6]
+[DEBUG] 2019-12-07 15:27:23.168 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operator
+[DEBUG] 2019-12-07 15:27:23.168 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - operator currently on top of the stack = null
+[INFO ] 2019-12-07 15:27:23.169 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [6]
+[INFO ] 2019-12-07 15:27:23.169 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [evaluteSubExpression] - Infix expression: [(, 3, +, 7, )]
+[DEBUG] 2019-12-07 15:27:23.170 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 3
+[DEBUG] 2019-12-07 15:27:23.170 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
+[DEBUG] 2019-12-07 15:27:23.172 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - +
+[DEBUG] 2019-12-07 15:27:23.172 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
+[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 7
+[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
+[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - )
+[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - closedParenthesisCount++;
+[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - sub expression: [3, +, 7]
+[INFO ] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [convertToPostfix] - Infix expression: [3, +, 7]
+[INFO ] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: []
+[DEBUG] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
+[INFO ] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue +
+[INFO ] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [3]
+[DEBUG] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operator
+[DEBUG] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - operator currently on top of the stack = null
+[INFO ] 2019-12-07 15:27:23.175 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [3]
+[DEBUG] 2019-12-07 15:27:23.175 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
+[INFO ] 2019-12-07 15:27:23.176 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue null
+[INFO ] 2019-12-07 15:27:23.177 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - evaluatePostfix - Postfix expression: [3, 7, +]
+[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Final operand stack: [10]
+[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Result: 10
+[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue null
+[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 10
+[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] Postfix expression: [6, 10]
+[INFO ] 2019-12-07 15:27:23.179 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - evaluatePostfix - Postfix expression: [6, 10, +]
+[INFO ] 2019-12-07 15:27:23.180 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Final operand stack: [16]
+[INFO ] 2019-12-07 15:27:23.181 [com.evangreenstein.evaluator.main.Main.main()] Main - Result: 16
