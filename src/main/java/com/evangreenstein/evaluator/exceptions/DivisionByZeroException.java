@@ -9,7 +9,7 @@ package com.evangreenstein.evaluator.exceptions;
  *
  * @author evangreenstein
  */
-public class DivisionByZeroException extends Exception{
+public class DivisionByZeroException extends RuntimeException{
     public DivisionByZeroException(String errorMessage) {
         super(errorMessage);
     }

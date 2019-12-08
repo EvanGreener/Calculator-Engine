@@ -8,7 +8,7 @@ package com.evangreenstein.evaluator;
 import com.evangreenstein.evaluator.exceptions.DivisionByZeroException;
 import com.evangreenstein.evaluator.exceptions.InvalidStringException;
 import com.evangreenstein.evaluator.exceptions.NonBinaryExpressionException;
-import com.evangreenstein.evaluator.exceptions.NonMatchingParenthesisException;
+import com.evangreenstein.evaluator.exceptions.MismatchedParenthesisException;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Objects;
@@ -24,47 +24,50 @@ public class Evaluator {
 
     private final static Logger LOG = LoggerFactory.getLogger(Evaluator.class);
 
-    private String[] expressionArray = new String[3];
+    //Since it's mutable, there's no need to create more than one array for each instance of an Evaluator
+    private final String[] expressionArray = new String[3];
 
-    public String evaluate(Queue<String> infixExpression) throws InvalidStringException, DivisionByZeroException, NonBinaryExpressionException, NonMatchingParenthesisException {
+    public String evaluate(Queue<String> infixExpression) throws InvalidStringException, DivisionByZeroException, NonBinaryExpressionException, MismatchedParenthesisException {
 
         Objects.requireNonNull(infixExpression);
         LOG.info("Infix expression: " + infixExpression.toString());
         if (compareParathesis(infixExpression) > 0) {
-            throw new NonMatchingParenthesisException("At least one mismatched '(' ");
+            throw new MismatchedParenthesisException("At least one mismatched '(' ");
         } else if (compareParathesis(infixExpression) < 0) {
-            throw new NonMatchingParenthesisException("At least one mismatched ')' ");
+            throw new MismatchedParenthesisException("At least one mismatched ')' ");
         }
 
-        return evaluateExpression(infixExpression);
+        String result = evaluateExpression(infixExpression);
+        LOG.info("Final Result = "+result);
+        return result;
 
     }
 
-    private String evaluateExpression(Queue<String> infixExpression) throws InvalidStringException, NonBinaryExpressionException, NonMatchingParenthesisException, DivisionByZeroException {
+    private String evaluateExpression(Queue<String> infixExpression) throws InvalidStringException, NonBinaryExpressionException, MismatchedParenthesisException, DivisionByZeroException {
         Queue<String> postfixExpression = new ArrayDeque<>();
         convertToPostfix(infixExpression, postfixExpression);
         return evaluatePostfix(postfixExpression);
 
     }
 
-    private void convertToPostfix(Queue<String> infixExpression, Queue<String> postfixExpression) throws InvalidStringException, NonBinaryExpressionException, NonMatchingParenthesisException, DivisionByZeroException {
-        LOG.info("[convertToPostfix] - Infix expression: " + infixExpression.toString());
+    private void convertToPostfix(Queue<String> infixExpression, Queue<String> postfixExpression) throws InvalidStringException, NonBinaryExpressionException, MismatchedParenthesisException, DivisionByZeroException {
+        LOG.debug("[convertToPostfix] - Infix expression: " + infixExpression.toString());
         Deque<String> operatorStack = new ArrayDeque<>();
         boolean wasOperand = false;
         boolean wasOperator = false;
 
         while (!infixExpression.isEmpty()) {
-            LOG.info("Postfix expression: " + postfixExpression.toString());
+            LOG.debug("Postfix expression: " + postfixExpression.toString());
             String value = infixExpression.peek();
             String operatorOnTop;
 
             if (isOpenParenthesis(value)) {
                 String result = evaluteSubExpression(infixExpression, postfixExpression);
-                LOG.info("Result: "+result);
+                LOG.debug("Result: "+result);
                 result = performImpliedMultiplication(infixExpression, postfixExpression , result);
-                LOG.info(result);
+                LOG.debug(result);
                 postfixExpression.add(result);
-                LOG.info("[performImpliedMultiplication] Postfix expression: " + postfixExpression.toString());
+                LOG.debug("[performImpliedMultiplication] Postfix expression: " + postfixExpression.toString());
 
             } else if (isOperand(value)) {
                 LOG.debug("Operand");
@@ -86,6 +89,7 @@ public class Evaluator {
                 wasOperand = false;
                 wasOperator = true;
                 
+                
                 LOG.debug("Operator");
                 operatorOnTop = operatorStack.peek();
                 LOG.debug("operator currently on top of the stack = "+operatorOnTop);
@@ -104,9 +108,19 @@ public class Evaluator {
                 }
                 operatorStack.push(infixExpression.poll());
                 
+                try{
+                    if (isClosedParenthesis(infixExpression.peek())){
+                        throw new InvalidStringException("Cannot have a ')' after an operator");
+                    } 
+                }
+                catch (NullPointerException e){
+                    throw new NonBinaryExpressionException("An operator must have exactly two operands");
+                }
+                
+                
             } else {
                 if (isClosedParenthesis(value)) {
-                    throw new InvalidStringException("An expression cannot start with a ')'");
+                    throw new MismatchedParenthesisException("An expression cannot start with a ')'");
                 }
                 throw new InvalidStringException("There is/are is an operation/s in this expression "
                         + "that is not supported by this evaluator");
@@ -118,7 +132,7 @@ public class Evaluator {
     }
 
     private String evaluatePostfix(Queue<String> postfixExpression) throws DivisionByZeroException, InvalidStringException {
-        LOG.info("evaluatePostfix - Postfix expression: " + postfixExpression.toString());
+        LOG.debug("evaluatePostfix - Postfix expression: " + postfixExpression.toString());
         Deque<String> operandStack = new ArrayDeque<>();
 
         while (!postfixExpression.isEmpty()) {
@@ -134,7 +148,7 @@ public class Evaluator {
                 throw new InvalidStringException("There is/are is an operation/s that not supported by this evaluator");
             }
         }
-        LOG.info("Final operand stack: "+ operandStack.toString());
+        LOG.debug("Final operand stack: "+ operandStack.toString());
         return operandStack.peek();    
     }
 
@@ -146,11 +160,11 @@ public class Evaluator {
      * @return the result
      * @throws InvalidStringException
      * @throws NonBinaryExpressionException
-     * @throws NonMatchingParenthesisException
+     * @throws MismatchedParenthesisException
      * @throws DivisionByZeroException 
      */
-    private String evaluteSubExpression(Queue<String> infixExpression, Queue<String> postfixExpression) throws InvalidStringException, NonBinaryExpressionException, NonMatchingParenthesisException, DivisionByZeroException {
-        LOG.info("[evaluteSubExpression] - Infix expression: " + infixExpression.toString());
+    private String evaluteSubExpression(Queue<String> infixExpression, Queue<String> postfixExpression) throws InvalidStringException, NonBinaryExpressionException, MismatchedParenthesisException, DivisionByZeroException {
+        LOG.debug("[evaluteSubExpression] - Infix expression: " + infixExpression.toString());
         //To remove the first parenthesis in the expression
         infixExpression.poll();
 
@@ -186,7 +200,7 @@ public class Evaluator {
             }
         } catch (NullPointerException ex) {
             //Still possible that the expression looks like this: ')()('
-            throw new NonMatchingParenthesisException("An expression cannot look like this: ')()(' ", ex);
+            throw new MismatchedParenthesisException("An expression cannot look like this: ')()(' ", ex);
         }
         //It is impossible for the value before a ')' to be an operator 
         if (isOperator(infixExpression.peek())) {
@@ -194,12 +208,10 @@ public class Evaluator {
         }
         LOG.debug("sub expression: " + subExpression.toString());
         
-        //Recursion!!
-        //postfixExpression.add(evaluateExpression(subExpression));
-
         //To remove the last parenthesis in the expression
         infixExpression.poll();
         
+        //Recursion!!
         return evaluateExpression(subExpression);
     }
 
@@ -212,38 +224,35 @@ public class Evaluator {
      * @return returns the result of the multiplication(s)
      * @throws InvalidStringException
      * @throws NonBinaryExpressionException
-     * @throws NonMatchingParenthesisException
+     * @throws MismatchedParenthesisException
      * @throws DivisionByZeroException 
      */
-    private String performImpliedMultiplication(Queue<String> infixExpression, Queue<String> postfixExpression, String result) throws InvalidStringException, NonBinaryExpressionException, NonMatchingParenthesisException, DivisionByZeroException {
+    private String performImpliedMultiplication(Queue<String> infixExpression, Queue<String> postfixExpression, String result) throws InvalidStringException, NonBinaryExpressionException, MismatchedParenthesisException, DivisionByZeroException {
         String newValue = infixExpression.peek();
-        LOG.info("[performImpliedMultiplication] - newValue "+newValue);
+        LOG.debug("[performImpliedMultiplication] - newValue "+newValue);
         boolean wasParenthesis = false;
         try{
             //Checking for sub-expressions right next to it
             while (isOpenParenthesis(newValue)) {
-                LOG.info("[performImpliedMultiplication] - in while ");
+                LOG.debug("[performImpliedMultiplication] - in while ");
                 wasParenthesis = true;
                 //evaluate sub expression and multiply it to whatever is in front of the postfix expression
                 String result2 = evaluteSubExpression(infixExpression, postfixExpression);
-                LOG.info("performImpliedMultiplication result2 - " + result2);
+                LOG.debug("performImpliedMultiplication result2 - " + result2);
                 result = solveInfixExp(result, "*", result2);
-                LOG.info("performImpliedMultiplication result - " + result);
+                LOG.debug("performImpliedMultiplication result - " + result);
                 newValue = infixExpression.peek();
             }
             //Multiplication on the right side of the brace
             if (isOperand(newValue) && wasParenthesis) {
-                LOG.info("[performImpliedMultiplication] - in if ");
+                LOG.debug("[performImpliedMultiplication] - in if ");
                 //multiply value to whatever is in front of the postfix expression
                 result = solveInfixExp(result, "*", newValue);
             }  
             
-
-            
         }
         catch (NullPointerException ex){
-            //No need to do anything. This will happen once the while reaches the end
-            //of the expression
+            //Reached the end of the expression
             return result;
             
         }
@@ -342,6 +351,15 @@ public class Evaluator {
         }
     }
     
+    /**
+     * Solves a simple expression
+     * 
+     * @param operand1
+     * @param operator
+     * @param operand2
+     * @return The result
+     * @throws DivisionByZeroException 
+     */
     private String solveInfixExp(String operand1, String operator, String operand2) throws DivisionByZeroException {
         int op1 = Integer.parseInt(operand1);
         int op2 = Integer.parseInt(operand2);

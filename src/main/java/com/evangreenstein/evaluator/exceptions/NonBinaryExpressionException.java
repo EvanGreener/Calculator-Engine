@@ -9,7 +9,7 @@ package com.evangreenstein.evaluator.exceptions;
  *
  * @author evangreenstein
  */
-public class NonBinaryExpressionException extends Exception{
+public class NonBinaryExpressionException extends RuntimeException{
     public NonBinaryExpressionException(String errorMessage) {
         super(errorMessage);
     }

@@ -9,7 +9,7 @@ package com.evangreenstein.evaluator.exceptions;
  *
  * @author evangreenstein
  */
-public class InvalidStringException extends Exception{
+public class InvalidStringException extends RuntimeException{
     public InvalidStringException(String errorMessage) {
         super(errorMessage);
     }

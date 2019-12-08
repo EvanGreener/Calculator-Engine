@@ -1,62 +1,30 @@
-[INFO ] 2019-12-07 15:27:23.142 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Infix expression: [(, 2, +, 4, ), +, (, 3, +, 7, )]
-[INFO ] 2019-12-07 15:27:23.146 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [convertToPostfix] - Infix expression: [(, 2, +, 4, ), +, (, 3, +, 7, )]
-[INFO ] 2019-12-07 15:27:23.146 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: []
-[INFO ] 2019-12-07 15:27:23.147 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [evaluteSubExpression] - Infix expression: [(, 2, +, 4, ), +, (, 3, +, 7, )]
-[DEBUG] 2019-12-07 15:27:23.147 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 2
-[DEBUG] 2019-12-07 15:27:23.152 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
-[DEBUG] 2019-12-07 15:27:23.154 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - +
-[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
-[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 4
-[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
-[DEBUG] 2019-12-07 15:27:23.155 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - )
-[DEBUG] 2019-12-07 15:27:23.156 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - closedParenthesisCount++;
-[DEBUG] 2019-12-07 15:27:23.156 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - sub expression: [2, +, 4]
-[INFO ] 2019-12-07 15:27:23.156 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [convertToPostfix] - Infix expression: [2, +, 4]
-[INFO ] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: []
-[DEBUG] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
-[INFO ] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue +
-[INFO ] 2019-12-07 15:27:23.157 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [2]
-[DEBUG] 2019-12-07 15:27:23.158 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operator
-[DEBUG] 2019-12-07 15:27:23.158 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - operator currently on top of the stack = null
-[INFO ] 2019-12-07 15:27:23.158 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [2]
-[DEBUG] 2019-12-07 15:27:23.159 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
-[INFO ] 2019-12-07 15:27:23.159 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue null
-[INFO ] 2019-12-07 15:27:23.160 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - evaluatePostfix - Postfix expression: [2, 4, +]
-[INFO ] 2019-12-07 15:27:23.164 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Final operand stack: [6]
-[INFO ] 2019-12-07 15:27:23.165 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Result: 6
-[INFO ] 2019-12-07 15:27:23.165 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue +
-[INFO ] 2019-12-07 15:27:23.165 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 6
-[INFO ] 2019-12-07 15:27:23.167 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] Postfix expression: [6]
-[INFO ] 2019-12-07 15:27:23.167 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [6]
-[DEBUG] 2019-12-07 15:27:23.168 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operator
-[DEBUG] 2019-12-07 15:27:23.168 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - operator currently on top of the stack = null
-[INFO ] 2019-12-07 15:27:23.169 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [6]
-[INFO ] 2019-12-07 15:27:23.169 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [evaluteSubExpression] - Infix expression: [(, 3, +, 7, )]
-[DEBUG] 2019-12-07 15:27:23.170 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 3
-[DEBUG] 2019-12-07 15:27:23.170 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
-[DEBUG] 2019-12-07 15:27:23.172 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - +
-[DEBUG] 2019-12-07 15:27:23.172 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
-[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 7
-[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 1 0
-[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - )
-[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - closedParenthesisCount++;
-[DEBUG] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - sub expression: [3, +, 7]
-[INFO ] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [convertToPostfix] - Infix expression: [3, +, 7]
-[INFO ] 2019-12-07 15:27:23.173 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: []
-[DEBUG] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
-[INFO ] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue +
-[INFO ] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [3]
-[DEBUG] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operator
-[DEBUG] 2019-12-07 15:27:23.174 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - operator currently on top of the stack = null
-[INFO ] 2019-12-07 15:27:23.175 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Postfix expression: [3]
-[DEBUG] 2019-12-07 15:27:23.175 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Operand
-[INFO ] 2019-12-07 15:27:23.176 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue null
-[INFO ] 2019-12-07 15:27:23.177 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - evaluatePostfix - Postfix expression: [3, 7, +]
-[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Final operand stack: [10]
-[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Result: 10
-[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] - newValue null
-[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - 10
-[INFO ] 2019-12-07 15:27:23.178 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - [performImpliedMultiplication] Postfix expression: [6, 10]
-[INFO ] 2019-12-07 15:27:23.179 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - evaluatePostfix - Postfix expression: [6, 10, +]
-[INFO ] 2019-12-07 15:27:23.180 [com.evangreenstein.evaluator.main.Main.main()] EvaluatorTwo - Final operand stack: [16]
-[INFO ] 2019-12-07 15:27:23.181 [com.evangreenstein.evaluator.main.Main.main()] Main - Result: 16
+[INFO ] 2019-12-07 22:45:31.830 [Time-limited test] Evaluator - Infix expression: [9/3]
+[INFO ] 2019-12-07 22:45:31.841 [Time-limited test] Evaluator - Infix expression: [3, 3, +]
+[INFO ] 2019-12-07 22:45:31.844 [Time-limited test] Evaluator - Infix expression: [*, -, 4]
+[INFO ] 2019-12-07 22:45:31.853 [Time-limited test] Evaluator - Infix expression: [(, 4, (, 5, ), 3, (, 2, )]
+[INFO ] 2019-12-07 22:45:31.862 [Time-limited test] Evaluator - Infix expression: [), (, 4, ), 5, (, 3, ), (, 2, ), (]
+[INFO ] 2019-12-07 22:45:31.871 [Time-limited test] Evaluator - Infix expression: [), 4, (, 5, (, 3, ), (, 2, ), )]
+[INFO ] 2019-12-07 22:45:31.888 [Time-limited test] Evaluator - Infix expression: [4, +, 5, -]
+[INFO ] 2019-12-07 22:45:31.981 [Time-limited test] Evaluator - Infix expression: [(, /, 5, (, 3, +, 2, ), )]
+[INFO ] 2019-12-07 22:45:31.989 [Time-limited test] Evaluator - Infix expression: [(, 3, +, 2, *, )]
+[INFO ] 2019-12-07 22:45:32.004 [Time-limited test] Evaluator - Infix expression: [76, /, (, 2, -, 2, )]
+[INFO ] 2019-12-07 22:45:32.017 [Time-limited test] Evaluator - Infix expression: [1, +, 1]
+[INFO ] 2019-12-07 22:45:32.019 [Time-limited test] Evaluator - Final Result = 2
+[INFO ] 2019-12-07 22:45:32.024 [Time-limited test] Evaluator - Infix expression: [1, +, 2, *, 3]
+[INFO ] 2019-12-07 22:45:32.026 [Time-limited test] Evaluator - Final Result = 7
+[INFO ] 2019-12-07 22:45:32.029 [Time-limited test] Evaluator - Infix expression: [(, 1, +, 2, ), /, 3]
+[INFO ] 2019-12-07 22:45:32.030 [Time-limited test] Evaluator - Final Result = 1
+[INFO ] 2019-12-07 22:45:32.033 [Time-limited test] Evaluator - Infix expression: [3, (, 1, +, 2, )]
+[INFO ] 2019-12-07 22:45:32.036 [Time-limited test] Evaluator - Final Result = 3
+[INFO ] 2019-12-07 22:45:32.070 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), (, 3, -, 1, )]
+[INFO ] 2019-12-07 22:45:32.074 [Time-limited test] Evaluator - Final Result = 12
+[INFO ] 2019-12-07 22:45:32.078 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), 5]
+[INFO ] 2019-12-07 22:45:32.080 [Time-limited test] Evaluator - Final Result = 5
+[INFO ] 2019-12-07 22:45:32.084 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, (, 5, +, 3, ), (, 9, +, 4, ), 2]
+[INFO ] 2019-12-07 22:45:32.090 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, +, (, 1, +, 2, )]
+[INFO ] 2019-12-07 22:45:32.095 [Time-limited test] Evaluator - Infix expression: [-98]
+[INFO ] 2019-12-07 22:45:32.097 [Time-limited test] Evaluator - Final Result = -98
+[INFO ] 2019-12-07 22:45:32.099 [Time-limited test] Evaluator - Infix expression: [(, 21, )]
+[INFO ] 2019-12-07 22:45:32.101 [Time-limited test] Evaluator - Final Result = 21
+[INFO ] 2019-12-07 22:45:32.105 [Time-limited test] Evaluator - Infix expression: [(, 5, (, 3, +, (, 2, (, 9, -, 5, ), ), ), )]
+[INFO ] 2019-12-07 22:45:32.108 [Time-limited test] Evaluator - Final Result = 5
