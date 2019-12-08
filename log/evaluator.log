@@ -1,30 +1,151 @@
-[INFO ] 2019-12-07 22:45:31.830 [Time-limited test] Evaluator - Infix expression: [9/3]
-[INFO ] 2019-12-07 22:45:31.841 [Time-limited test] Evaluator - Infix expression: [3, 3, +]
-[INFO ] 2019-12-07 22:45:31.844 [Time-limited test] Evaluator - Infix expression: [*, -, 4]
-[INFO ] 2019-12-07 22:45:31.853 [Time-limited test] Evaluator - Infix expression: [(, 4, (, 5, ), 3, (, 2, )]
-[INFO ] 2019-12-07 22:45:31.862 [Time-limited test] Evaluator - Infix expression: [), (, 4, ), 5, (, 3, ), (, 2, ), (]
-[INFO ] 2019-12-07 22:45:31.871 [Time-limited test] Evaluator - Infix expression: [), 4, (, 5, (, 3, ), (, 2, ), )]
-[INFO ] 2019-12-07 22:45:31.888 [Time-limited test] Evaluator - Infix expression: [4, +, 5, -]
-[INFO ] 2019-12-07 22:45:31.981 [Time-limited test] Evaluator - Infix expression: [(, /, 5, (, 3, +, 2, ), )]
-[INFO ] 2019-12-07 22:45:31.989 [Time-limited test] Evaluator - Infix expression: [(, 3, +, 2, *, )]
-[INFO ] 2019-12-07 22:45:32.004 [Time-limited test] Evaluator - Infix expression: [76, /, (, 2, -, 2, )]
-[INFO ] 2019-12-07 22:45:32.017 [Time-limited test] Evaluator - Infix expression: [1, +, 1]
-[INFO ] 2019-12-07 22:45:32.019 [Time-limited test] Evaluator - Final Result = 2
-[INFO ] 2019-12-07 22:45:32.024 [Time-limited test] Evaluator - Infix expression: [1, +, 2, *, 3]
-[INFO ] 2019-12-07 22:45:32.026 [Time-limited test] Evaluator - Final Result = 7
-[INFO ] 2019-12-07 22:45:32.029 [Time-limited test] Evaluator - Infix expression: [(, 1, +, 2, ), /, 3]
-[INFO ] 2019-12-07 22:45:32.030 [Time-limited test] Evaluator - Final Result = 1
-[INFO ] 2019-12-07 22:45:32.033 [Time-limited test] Evaluator - Infix expression: [3, (, 1, +, 2, )]
-[INFO ] 2019-12-07 22:45:32.036 [Time-limited test] Evaluator - Final Result = 3
-[INFO ] 2019-12-07 22:45:32.070 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), (, 3, -, 1, )]
-[INFO ] 2019-12-07 22:45:32.074 [Time-limited test] Evaluator - Final Result = 12
-[INFO ] 2019-12-07 22:45:32.078 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), 5]
-[INFO ] 2019-12-07 22:45:32.080 [Time-limited test] Evaluator - Final Result = 5
-[INFO ] 2019-12-07 22:45:32.084 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, (, 5, +, 3, ), (, 9, +, 4, ), 2]
-[INFO ] 2019-12-07 22:45:32.090 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, +, (, 1, +, 2, )]
-[INFO ] 2019-12-07 22:45:32.095 [Time-limited test] Evaluator - Infix expression: [-98]
-[INFO ] 2019-12-07 22:45:32.097 [Time-limited test] Evaluator - Final Result = -98
-[INFO ] 2019-12-07 22:45:32.099 [Time-limited test] Evaluator - Infix expression: [(, 21, )]
-[INFO ] 2019-12-07 22:45:32.101 [Time-limited test] Evaluator - Final Result = 21
-[INFO ] 2019-12-07 22:45:32.105 [Time-limited test] Evaluator - Infix expression: [(, 5, (, 3, +, (, 2, (, 9, -, 5, ), ), ), )]
-[INFO ] 2019-12-07 22:45:32.108 [Time-limited test] Evaluator - Final Result = 5
+[INFO ] 2019-12-08 17:36:47.303 [Time-limited test] Evaluator - Infix expression: [9/3]
+[INFO ] 2019-12-08 17:36:47.314 [Time-limited test] Evaluator - Infix expression: [3, 3, +]
+[INFO ] 2019-12-08 17:36:47.319 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.321 [Time-limited test] Evaluator - Infix expression: [*, -, 4]
+[INFO ] 2019-12-08 17:36:47.334 [Time-limited test] Evaluator - Infix expression: [(, 4, (, 5, ), 3, (, 2, )]
+[INFO ] 2019-12-08 17:36:47.364 [Time-limited test] Evaluator - Infix expression: [), (, 4, ), 5, (, 3, ), (, 2, ), (]
+[INFO ] 2019-12-08 17:36:47.383 [Time-limited test] Evaluator - Infix expression: [), 4, (, 5, (, 3, ), (, 2, ), )]
+[INFO ] 2019-12-08 17:36:47.387 [Time-limited test] Evaluator - Infix expression: [4, +, 5, -]
+[INFO ] 2019-12-08 17:36:47.390 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.391 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.436 [Time-limited test] Evaluator - Infix expression: [(, /, 5, (, 3, +, 2, ), )]
+[INFO ] 2019-12-08 17:36:47.507 [Time-limited test] Evaluator - Infix expression: [(, 3, +, 2, *, )]
+[INFO ] 2019-12-08 17:36:47.513 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.514 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.517 [Time-limited test] Evaluator - Infix expression: [76, /, (, 2, -, 2, )]
+[INFO ] 2019-12-08 17:36:47.518 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.518 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.523 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.523 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [2, 2, -]
+[INFO ] 2019-12-08 17:36:47.524 [Time-limited test] Evaluator - Final operand stack: [0]
+[INFO ] 2019-12-08 17:36:47.525 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 0
+[INFO ] 2019-12-08 17:36:47.525 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [76, 0, /]
+[INFO ] 2019-12-08 17:36:47.528 [Time-limited test] Evaluator - Infix expression: [1, +, 1]
+[INFO ] 2019-12-08 17:36:47.530 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.530 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.530 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [1, 1, +]
+[INFO ] 2019-12-08 17:36:47.531 [Time-limited test] Evaluator - Final operand stack: [2]
+[INFO ] 2019-12-08 17:36:47.532 [Time-limited test] Evaluator - Final Result = 2
+[INFO ] 2019-12-08 17:36:47.535 [Time-limited test] Evaluator - Infix expression: [1, +, 2, *, 3]
+[INFO ] 2019-12-08 17:36:47.536 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.537 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.537 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 3
+[INFO ] 2019-12-08 17:36:47.537 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [1, 2, 3, *, +]
+[INFO ] 2019-12-08 17:36:47.538 [Time-limited test] Evaluator - Final operand stack: [7]
+[INFO ] 2019-12-08 17:36:47.538 [Time-limited test] Evaluator - Final Result = 7
+[INFO ] 2019-12-08 17:36:47.545 [Time-limited test] Evaluator - Infix expression: [(, 1, +, 2, ), /, 3]
+[INFO ] 2019-12-08 17:36:47.546 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.546 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.546 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [1, 2, +]
+[INFO ] 2019-12-08 17:36:47.547 [Time-limited test] Evaluator - Final operand stack: [3]
+[INFO ] 2019-12-08 17:36:47.547 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 3
+[INFO ] 2019-12-08 17:36:47.548 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 9
+[INFO ] 2019-12-08 17:36:47.548 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [3, 3, /]
+[INFO ] 2019-12-08 17:36:47.548 [Time-limited test] Evaluator - Final operand stack: [1]
+[INFO ] 2019-12-08 17:36:47.549 [Time-limited test] Evaluator - Final Result = 1
+[INFO ] 2019-12-08 17:36:47.551 [Time-limited test] Evaluator - Infix expression: [3, (, 1, +, 2, )]
+[INFO ] 2019-12-08 17:36:47.552 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 3
+[INFO ] 2019-12-08 17:36:47.552 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.552 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.553 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [1, 2, +]
+[INFO ] 2019-12-08 17:36:47.553 [Time-limited test] Evaluator - Final operand stack: [3]
+[INFO ] 2019-12-08 17:36:47.553 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 9
+[INFO ] 2019-12-08 17:36:47.553 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [9]
+[INFO ] 2019-12-08 17:36:47.554 [Time-limited test] Evaluator - Final operand stack: [9]
+[INFO ] 2019-12-08 17:36:47.554 [Time-limited test] Evaluator - Final Result = 9
+[INFO ] 2019-12-08 17:36:47.556 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), (, 3, -, 1, )]
+[INFO ] 2019-12-08 17:36:47.557 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.557 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.557 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [4, 2, +]
+[INFO ] 2019-12-08 17:36:47.557 [Time-limited test] Evaluator - Final operand stack: [6]
+[INFO ] 2019-12-08 17:36:47.558 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 6
+[INFO ] 2019-12-08 17:36:47.558 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.558 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.559 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [3, 1, -]
+[INFO ] 2019-12-08 17:36:47.559 [Time-limited test] Evaluator - Final operand stack: [2]
+[INFO ] 2019-12-08 17:36:47.559 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 12
+[INFO ] 2019-12-08 17:36:47.559 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [12]
+[INFO ] 2019-12-08 17:36:47.560 [Time-limited test] Evaluator - Final operand stack: [12]
+[INFO ] 2019-12-08 17:36:47.560 [Time-limited test] Evaluator - Final Result = 12
+[INFO ] 2019-12-08 17:36:47.562 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), 5]
+[INFO ] 2019-12-08 17:36:47.563 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.563 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.563 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [4, 2, +]
+[INFO ] 2019-12-08 17:36:47.564 [Time-limited test] Evaluator - Final operand stack: [6]
+[INFO ] 2019-12-08 17:36:47.564 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 6
+[INFO ] 2019-12-08 17:36:47.564 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 30
+[INFO ] 2019-12-08 17:36:47.565 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [30]
+[INFO ] 2019-12-08 17:36:47.565 [Time-limited test] Evaluator - Final operand stack: [30]
+[INFO ] 2019-12-08 17:36:47.565 [Time-limited test] Evaluator - Final Result = 30
+[INFO ] 2019-12-08 17:36:47.567 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, (, 5, +, 3, ), (, 9, +, 4, ), 2]
+[INFO ] 2019-12-08 17:36:47.568 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 3
+[INFO ] 2019-12-08 17:36:47.569 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.569 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.569 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [2, 2, +]
+[INFO ] 2019-12-08 17:36:47.570 [Time-limited test] Evaluator - Final operand stack: [4]
+[INFO ] 2019-12-08 17:36:47.570 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 12
+[INFO ] 2019-12-08 17:36:47.570 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 48
+[INFO ] 2019-12-08 17:36:47.570 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.571 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 3
+[INFO ] 2019-12-08 17:36:47.571 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [5, 3, +]
+[INFO ] 2019-12-08 17:36:47.571 [Time-limited test] Evaluator - Final operand stack: [8]
+[INFO ] 2019-12-08 17:36:47.571 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 384
+[INFO ] 2019-12-08 17:36:47.572 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.572 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 4
+[INFO ] 2019-12-08 17:36:47.572 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [9, 4, +]
+[INFO ] 2019-12-08 17:36:47.572 [Time-limited test] Evaluator - Final operand stack: [13]
+[INFO ] 2019-12-08 17:36:47.573 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 4992
+[INFO ] 2019-12-08 17:36:47.573 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 9984
+[INFO ] 2019-12-08 17:36:47.573 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [9984]
+[INFO ] 2019-12-08 17:36:47.573 [Time-limited test] Evaluator - Final operand stack: [9984]
+[INFO ] 2019-12-08 17:36:47.574 [Time-limited test] Evaluator - Final Result = 9984
+[INFO ] 2019-12-08 17:36:47.576 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, +, (, 1, +, 2, )]
+[INFO ] 2019-12-08 17:36:47.577 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 3
+[INFO ] 2019-12-08 17:36:47.577 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.578 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.578 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [2, 2, +]
+[INFO ] 2019-12-08 17:36:47.578 [Time-limited test] Evaluator - Final operand stack: [4]
+[INFO ] 2019-12-08 17:36:47.578 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 12
+[INFO ] 2019-12-08 17:36:47.579 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 48
+[INFO ] 2019-12-08 17:36:47.579 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.579 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.579 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [1, 2, +]
+[INFO ] 2019-12-08 17:36:47.580 [Time-limited test] Evaluator - Final operand stack: [3]
+[INFO ] 2019-12-08 17:36:47.580 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 3
+[INFO ] 2019-12-08 17:36:47.580 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [48, 3, +]
+[INFO ] 2019-12-08 17:36:47.581 [Time-limited test] Evaluator - Final operand stack: [51]
+[INFO ] 2019-12-08 17:36:47.581 [Time-limited test] Evaluator - Final Result = 51
+[INFO ] 2019-12-08 17:36:47.583 [Time-limited test] Evaluator - Infix expression: [-98]
+[INFO ] 2019-12-08 17:36:47.584 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: -98
+[INFO ] 2019-12-08 17:36:47.584 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [-98]
+[INFO ] 2019-12-08 17:36:47.584 [Time-limited test] Evaluator - Final operand stack: [-98]
+[INFO ] 2019-12-08 17:36:47.585 [Time-limited test] Evaluator - Final Result = -98
+[INFO ] 2019-12-08 17:36:47.587 [Time-limited test] Evaluator - Infix expression: [(, 21, )]
+[INFO ] 2019-12-08 17:36:47.588 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 21
+[INFO ] 2019-12-08 17:36:47.588 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [21]
+[INFO ] 2019-12-08 17:36:47.588 [Time-limited test] Evaluator - Final operand stack: [21]
+[INFO ] 2019-12-08 17:36:47.589 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 21
+[INFO ] 2019-12-08 17:36:47.589 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [21]
+[INFO ] 2019-12-08 17:36:47.589 [Time-limited test] Evaluator - Final operand stack: [21]
+[INFO ] 2019-12-08 17:36:47.589 [Time-limited test] Evaluator - Final Result = 21
+[INFO ] 2019-12-08 17:36:47.591 [Time-limited test] Evaluator - Infix expression: [(, 5, (, 3, +, (, 2, (, 9, -, 5, ), ), ), )]
+[INFO ] 2019-12-08 17:36:47.593 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 5
+[INFO ] 2019-12-08 17:36:47.593 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.593 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 2
+[INFO ] 2019-12-08 17:36:47.594 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 1
+[INFO ] 2019-12-08 17:36:47.594 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 5
+[INFO ] 2019-12-08 17:36:47.594 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [9, 5, -]
+[INFO ] 2019-12-08 17:36:47.595 [Time-limited test] Evaluator - Final operand stack: [4]
+[INFO ] 2019-12-08 17:36:47.595 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 8
+[INFO ] 2019-12-08 17:36:47.595 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [8]
+[INFO ] 2019-12-08 17:36:47.595 [Time-limited test] Evaluator - Final operand stack: [8]
+[INFO ] 2019-12-08 17:36:47.595 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 8
+[INFO ] 2019-12-08 17:36:47.596 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [3, 8, +]
+[INFO ] 2019-12-08 17:36:47.596 [Time-limited test] Evaluator - Final operand stack: [11]
+[INFO ] 2019-12-08 17:36:47.596 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 55
+[INFO ] 2019-12-08 17:36:47.597 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [55]
+[INFO ] 2019-12-08 17:36:47.597 [Time-limited test] Evaluator - Final operand stack: [55]
+[INFO ] 2019-12-08 17:36:47.598 [Time-limited test] Evaluator - impliedMultiplicationChain AFTER: 55
+[INFO ] 2019-12-08 17:36:47.598 [Time-limited test] Evaluator - evaluatePostfix - Postfix expression: [55]
+[INFO ] 2019-12-08 17:36:47.598 [Time-limited test] Evaluator - Final operand stack: [55]
+[INFO ] 2019-12-08 17:36:47.598 [Time-limited test] Evaluator - Final Result = 55

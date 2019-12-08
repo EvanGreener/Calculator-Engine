@@ -31,7 +31,7 @@ public class TestEvaluatorResult {
             {createExp4(), "9"},
             {createExp5(), "12"},
             {createExp6(), "30"},
-            {createExp7(), "2496"},
+            {createExp7(), "9984"},
             {createExp8(), "51"},
             {createExp9(), "-98"},
             {createExp10(), "21"},
@@ -199,7 +199,7 @@ public class TestEvaluatorResult {
 
     /**
      * '3(2+2)4(5+3)(9+4)2'
-     * Expected: 2496
+     * Expected: 9984
      * 
      * Tests a chain of implied multiplications
      *
