@@ -1,0 +1,30 @@
+[INFO ] 2019-12-07 22:45:31.830 [Time-limited test] Evaluator - Infix expression: [9/3]
+[INFO ] 2019-12-07 22:45:31.841 [Time-limited test] Evaluator - Infix expression: [3, 3, +]
+[INFO ] 2019-12-07 22:45:31.844 [Time-limited test] Evaluator - Infix expression: [*, -, 4]
+[INFO ] 2019-12-07 22:45:31.853 [Time-limited test] Evaluator - Infix expression: [(, 4, (, 5, ), 3, (, 2, )]
+[INFO ] 2019-12-07 22:45:31.862 [Time-limited test] Evaluator - Infix expression: [), (, 4, ), 5, (, 3, ), (, 2, ), (]
+[INFO ] 2019-12-07 22:45:31.871 [Time-limited test] Evaluator - Infix expression: [), 4, (, 5, (, 3, ), (, 2, ), )]
+[INFO ] 2019-12-07 22:45:31.888 [Time-limited test] Evaluator - Infix expression: [4, +, 5, -]
+[INFO ] 2019-12-07 22:45:31.981 [Time-limited test] Evaluator - Infix expression: [(, /, 5, (, 3, +, 2, ), )]
+[INFO ] 2019-12-07 22:45:31.989 [Time-limited test] Evaluator - Infix expression: [(, 3, +, 2, *, )]
+[INFO ] 2019-12-07 22:45:32.004 [Time-limited test] Evaluator - Infix expression: [76, /, (, 2, -, 2, )]
+[INFO ] 2019-12-07 22:45:32.017 [Time-limited test] Evaluator - Infix expression: [1, +, 1]
+[INFO ] 2019-12-07 22:45:32.019 [Time-limited test] Evaluator - Final Result = 2
+[INFO ] 2019-12-07 22:45:32.024 [Time-limited test] Evaluator - Infix expression: [1, +, 2, *, 3]
+[INFO ] 2019-12-07 22:45:32.026 [Time-limited test] Evaluator - Final Result = 7
+[INFO ] 2019-12-07 22:45:32.029 [Time-limited test] Evaluator - Infix expression: [(, 1, +, 2, ), /, 3]
+[INFO ] 2019-12-07 22:45:32.030 [Time-limited test] Evaluator - Final Result = 1
+[INFO ] 2019-12-07 22:45:32.033 [Time-limited test] Evaluator - Infix expression: [3, (, 1, +, 2, )]
+[INFO ] 2019-12-07 22:45:32.036 [Time-limited test] Evaluator - Final Result = 3
+[INFO ] 2019-12-07 22:45:32.070 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), (, 3, -, 1, )]
+[INFO ] 2019-12-07 22:45:32.074 [Time-limited test] Evaluator - Final Result = 12
+[INFO ] 2019-12-07 22:45:32.078 [Time-limited test] Evaluator - Infix expression: [(, 4, +, 2, ), 5]
+[INFO ] 2019-12-07 22:45:32.080 [Time-limited test] Evaluator - Final Result = 5
+[INFO ] 2019-12-07 22:45:32.084 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, (, 5, +, 3, ), (, 9, +, 4, ), 2]
+[INFO ] 2019-12-07 22:45:32.090 [Time-limited test] Evaluator - Infix expression: [3, (, 2, +, 2, ), 4, +, (, 1, +, 2, )]
+[INFO ] 2019-12-07 22:45:32.095 [Time-limited test] Evaluator - Infix expression: [-98]
+[INFO ] 2019-12-07 22:45:32.097 [Time-limited test] Evaluator - Final Result = -98
+[INFO ] 2019-12-07 22:45:32.099 [Time-limited test] Evaluator - Infix expression: [(, 21, )]
+[INFO ] 2019-12-07 22:45:32.101 [Time-limited test] Evaluator - Final Result = 21
+[INFO ] 2019-12-07 22:45:32.105 [Time-limited test] Evaluator - Infix expression: [(, 5, (, 3, +, (, 2, (, 9, -, 5, ), ), ), )]
+[INFO ] 2019-12-07 22:45:32.108 [Time-limited test] Evaluator - Final Result = 5

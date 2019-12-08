@@ -1,13 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Maven version of the xml document currently only 4.0.0 is valid -->
     <modelVersion>4.0.0</modelVersion>
+
+    <!-- The GAV consists of an arbitrary descriptor that is usually in the
+    form of a reverse domain name. -->
     <groupId>com.evangreenstein</groupId>
+
+    <!-- This is the name given to the packaged build -->
     <artifactId>evaluator</artifactId>
+
+    <!-- The version of the build. Any value is valid though a number and a
+    string are common. SNAPSHOT means a project under development. FINAL is commonly
+    used to refer to stable production version -->
     <version>1.0-SNAPSHOT</version>
+
+    <!-- Default value is jar but may be war or ear -->
     <packaging>jar</packaging>
+
+    <!-- The name given to the project. Unlike groupId and artifactId a name
+    may have spaces. By default it is the following so it is optional -->
+    <name>${project.artifactId}</name>
+
+    <!-- A description of the program -->
+    <description>A simple twitter client</description>
+
+    <!-- Identifies the programmer or programmers who worked on the project -->
+    <developers>
+        <developer>
+            <id>1734025</id>
+            <name>Evan Greenstein</name>
+            <email>evanlg16@gmail.com</email>
+        </developer>
+    </developers>
+
+    <!-- The company or organization that the programmer(s) work for -->
+    <organization>
+        <name>Dawson</name>
+    </organization>
+
+    <!-- Global settings for the project. Settings can be accessed in the pom
+    by placing the tag name in ${...} ex. ${mainClass} -->
     <properties>
+        <!-- class that has the main method -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>12</maven.compiler.source>
         <maven.compiler.target>12</maven.compiler.target>
+        <mainClass>${project.groupId}.${project.artifactId}.main.Main</mainClass>
     </properties>
+
+    <!-- All of the sample code shares the same dependencies and build         -->
+    <!-- The parent project named web_project_dependencies must be loaded into -->
+    <!-- the IDE and you must Run Maven with a goal of install:install         -->
+    <!-- Now it can be the parent pom of all projects                          --> 
+    <!-- https://gitlab.com/omniprof/desktop_project_dependencies.git              --> 
+    <parent>
+        <groupId>com.kfdesktopstandard</groupId>
+        <artifactId>desktop_project_dependencies</artifactId>
+        <version>1.1</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.26</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
 </project>
