@@ -1,1 +1,3 @@
-I only have 21 out of 25 tests but all of them passed.
+# Calculator engine
+
+See the Evaluator.java class in the com.evangreenstein.evaluator package. Contains one public method evaluate() which takes an array of operands and operators and evaluates the expression. 
